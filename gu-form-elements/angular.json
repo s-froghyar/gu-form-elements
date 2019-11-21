@@ -124,6 +124,41 @@
           }
         }
       }
+    },
+    "form-elements-lib": {
+      "projectType": "library",
+      "root": "projects/form-elements-lib",
+      "sourceRoot": "projects/form-elements-lib/src",
+      "prefix": "gu",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/form-elements-lib/tsconfig.lib.json",
+            "project": "projects/form-elements-lib/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/form-elements-lib/src/test.ts",
+            "tsConfig": "projects/form-elements-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/form-elements-lib/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/form-elements-lib/tsconfig.lib.json",
+              "projects/form-elements-lib/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "gu-form-elements"
 }

@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "form-elements-lib": [
+        "dist/form-elements-lib"
+      ],
+      "form-elements-lib/*": [
+        "dist/form-elements-lib/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

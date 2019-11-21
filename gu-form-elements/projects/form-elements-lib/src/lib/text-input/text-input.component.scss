@@ -1,0 +1,18 @@
+.field-wrapper {
+    display: flex; 
+    align-items: top;
+    label {
+        min-width: 185px; 
+        padding-right: 20px;
+        padding: 10px 36px;
+        letter-spacing: 4px;
+        font-weight: normal;
+    }
+    input {
+        border: none;
+        border-bottom: 1px solid #888;
+        background: transparent;
+        width: 40%;
+    }
+}
+    
